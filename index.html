@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Video campaign by purplepatch</title>
+    <link rel="shortcut icon" type="image/x-icon" href="//purplepatch.online/assets/ico/favicon.ico">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="carousel.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+        
+        #container {
+            width: 300px;
+            height: 250px;
+            top: 0;
+            left: 0;
+            perspective: 1500px;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: #e69368
+        }
+        
+        .slide {
+            overflow: hidden
+        }
+        
+        .slide img {
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+        
+        .slide .right_woman {
+            left: 46px
+        }
+        
+        .slide .left_man {
+            left: auto;
+            right: 25px
+        }
+        
+        .navigation {
+            display: none
+        }
+        
+        .controls {
+            top: 27%!important;
+            opacity: 0
+        }
+        
+        #invis {
+            width: 300px;
+            height: 200px;
+            background-color: brown;
+            position: absolute;
+            top: 0;
+            opacity: 0
+        }
+        
+        #video {
+            width: 300px;
+            height: 250px;
+            left: 0;
+            position: relative
+        }
+        
+        .video-controls {
+            top: -35px;
+            position: relative;
+            padding-left: 5px;
+            padding-right: 5px
+        }
+        
+        .sound {
+            float: right;
+            background: 0 0;
+            color: #1E673A;
+            border: none;
+            outline: 0
+        }
+        
+        .toggle {
+            background: 0 0;
+            color: #1E673A;
+            border: none;
+            outline: 0
+        }
+    </style>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id="container">
+        <div class="cube_templete">
+            <div id="link1" class="slide">
+                <div id="video-player" class="video-wrapper">
+                    <video id="video" playsinline autoplay muted playsinline>
+                            <source src="assets/keshkingvid.mp4" type="video/mp4">
+                        </video>
+                    <div class="video-controls">
+                        <button id="toggle" class="btn toggle"><i class="material-icons">play_arrow</i></button>
+                        <button id="sound" class="btn sound"><i class="material-icons">volume_off</i></button>
+                    </div>
+                </div>
+                <a href="{CLICK_MACRO}" target="_blank">
+                    <div id="invis"></div>
+                </a>
+            </div>
+            <div id="link2" class="slide">
+                <a href="{CLICK_MACRO}" target="_blank">
+                    <img src="bg.jpg?v=1.1" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
